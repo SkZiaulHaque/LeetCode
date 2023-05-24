@@ -31,8 +31,8 @@ public class GreatestCommonDivisorOfStringsAttempt2 {
             } else if (str1.length() > str2.length()) {
                 System.out.println("GCD is : " + str1.substring(str2.length()) ) ;
                 // pls see the line number 32... substring syntax is getting wrong.. I am putting wrong I think
-            } else {
-                System.out.println("GCD is : " + str2.substring(str1.length()));
+            } else if (str2.length() > str1.length()) {
+                System.out.println("GCD is : " + str2.substring(str1.length()) );
             }
         }
 
